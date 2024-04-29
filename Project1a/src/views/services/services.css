@@ -1,0 +1,88 @@
+/* Services Title */
+.services-title {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 2px;
+    border-bottom: #02470b 3px solid;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: black 2px 2px 2px;
+    width: 100%;
+}
+
+/* Services Content */
+.services-content {
+    background: #e9e1d3;
+    margin: 2px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Changed to three columns */
+    gap: 5px;
+    font-size: small;
+}
+
+/* Services Box */
+.services-box1,
+.services-box2,
+.services-box3,
+.services-box4 {
+    display: flex;
+    flex-direction: column;
+    border: #771d1d 1.7px solid;
+    border-radius: 5px;
+    box-shadow: black 2px 2px 5px;
+    align-items: center;
+    width: 95%;
+}
+
+/* Services Paragraph */
+.services-paragraph1,
+.services-paragraph2,
+.services-paragraph3,
+.services-paragraph4 {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    flex: 1 1;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Services Form */
+.services-form {
+    margin-top: 20px;
+    grid-column: span 3;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.services-form form {
+    display: grid;
+    gap: 10px;
+}
+
+.services-form label {
+    color: var(--text-color);
+}
+
+.services-form input[type='text'],
+.services-form input[type='email'],
+.services-form input[type='submit'] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+}
+
+.services-form input[type='submit'] {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    cursor: pointer;
+}
+
+.services-form input[type='submit']:hover {
+    background-color: #02470b;
+}
