@@ -9,7 +9,7 @@ const About = () => {
         </div>
             <div className='about-subtitle'>
                 Bringing over 35 years of specialized expertise in farm and small business accounting, consulting, and tax preparation. 
-                Lyle Stewart, and Cherylann Stewart, have been serving the community since 1984. Their daughter, Lauren Stewart officially joined the team in 2022
+                Lyle Stewart, and Cherylann Stewart, have been serving the community since 1984. Their daughter, Lauren Stewart-Coburn officially joined the team in 2022
         </div>
     <div className='about-content'>
     <div className='paragraph-box'>

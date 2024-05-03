@@ -26,6 +26,7 @@ function ServiceForm() {
                 id="email"
                 type="email" 
                 name="email"
+                placeholder='example@mail.com'
             />
             <ValidationError 
                 prefix="Email" 
@@ -35,6 +36,8 @@ function ServiceForm() {
             <textarea
                 id="message"
                 name="message"
+                style={{width: '100%', padding: '20px'}}
+                placeholder="How can we help you?" 
             />
             <ValidationError 
                 prefix="Message" 

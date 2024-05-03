@@ -31,7 +31,7 @@
 .header-content {
     font-weight: bold;
     text-transform: capitalize;
-    text-shadow: black -2px 0px 1px;
+    text-shadow: rgb(96, 92, 92) 1px 1px 1px;
     text-align: center;
     width: 100%;
 }
