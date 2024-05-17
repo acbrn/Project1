@@ -1,0 +1,45 @@
+.footer {
+  background-color: #333; /* Dark background color */
+  color: #fff;
+  padding: 20px;
+}
+
+.footer-title,
+.footer-slogan,
+.footer-content {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.footer-socials,
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.footer-socials h4,
+.footer-links h4 {
+  margin-bottom: 10px;
+}
+
+.footer-socials p,
+.footer-links p {
+  margin: 5px 0;
+}
+
+/* Style for the icons */
+.footer-socials p svg,
+.footer-links p svg {
+  fill: #fff;
+}
