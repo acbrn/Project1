@@ -29,8 +29,9 @@
   border: 1px solid var(--neutral-light-gray);
   border-radius: 10px;
   padding: 10px;
-  width: 200px;
+  width: 225px;
   text-align: center;
+  box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.8);
 }
 
 .product-item img {
@@ -47,7 +48,7 @@
 }
 
 .product-item span {
-  color: var(--accent-green);
+  color: var(--neutral-charcoal);
   font-weight: bold;
 }
 
@@ -61,6 +62,6 @@
 }
 
 .product-item button:hover {
-  background-color: var(--accent-yellow);
+  background-color: var(--secondary-blue);
   color: var(--neutral-charcoal);
 }

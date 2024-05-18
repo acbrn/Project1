@@ -37,7 +37,7 @@
 .product-item span {
   display: block;
   font-size: 1rem;
-  color: var(--accent-green);
+  color: var(--neutral-charcoal);
   font-weight: bold;
   margin-bottom: 10px;
 }

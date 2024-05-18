@@ -1,21 +1,11 @@
 import React, { useState } from 'react';
 import CartItem from '../../components/cartitem/CartItem';
-import AuthForm from '../../components/auth/auth';
+
 import './checkout.css';
 
-const Checkout = ({ cartItems, updateQuantity, removeFromCart, user, onSignIn, onSignUp }) => {
-    const [isAuthenticated, setIsAuthenticated] = useState(!!user);
+const Checkout = ({ cartItems, updateQuantity, removeFromCart }) => {
+
     const [step, setStep] = useState(1);
-
-    const handleSignIn = (credentials) => {
-        onSignIn(credentials);
-        setIsAuthenticated(true);
-    };
-
-    const handleSignUp = (credentials) => {
-        onSignUp(credentials);
-        setIsAuthenticated(true);
-    };
 
     const handleUpdateQuantity = (id, quantity) => {
         updateQuantity(id, quantity);
@@ -27,8 +17,8 @@ const Checkout = ({ cartItems, updateQuantity, removeFromCart, user, onSignIn, o
 
     const handleNextStep = () => setStep(step + 1);
     const handlePreviousStep = () => setStep(step - 1);
-
     const totalAmount = cartItems.reduce((total, item) => total + item.price * item.quantity, 0).toFixed(2);
+
 
     return (
         <div className="checkout-container">
@@ -47,35 +37,31 @@ const Checkout = ({ cartItems, updateQuantity, removeFromCart, user, onSignIn, o
                         <button onClick={handleNextStep}>Proceed to Checkout</button>
                     </div>
                 )}
-                {step === 2 && !isAuthenticated && (
+                {step === 2 && (
                     <div className="checkout-step">
-                        <h2>Sign In or Create Account</h2>
-                        <AuthForm onSignIn={handleSignIn} onSignUp={handleSignUp} />
-                        <button onClick={handlePreviousStep}>Back to Cart</button>
-                    </div>
-                )}
-                {step === 2 && isAuthenticated && (
-                    <div className="checkout-step">
-                        <h2>Shipping Information</h2>
-                        {/* Shipping form goes here */}
-                        <button onClick={handlePreviousStep}>Back to Cart</button>
-                        <button onClick={handleNextStep}>Continue</button>
+                        <h2>Payment Information</h2>
+                        {/* Mock payment form */}
+                        <div className="payment-form">
+                            <input type="text" placeholder="Card Number" />
+                            <input type="text" placeholder="Name on Card" />
+                            <input type="text" placeholder="Expiration Date" />
+                            <input type="text" placeholder="CVV" />
+                        </div>
+                        <button onClick={handlePreviousStep}>Back</button>
+                        <button onClick={handleNextStep}>Place Order</button>
                     </div>
                 )}
                 {step === 3 && (
                     <div className="checkout-step">
-                        <h2>Payment Information</h2>
-                        {/* Payment form goes here */}
-                        <button onClick={handlePreviousStep}>Back</button>
-                        <button onClick={handleNextStep}>Review Order</button>
-                    </div>
-                )}
-                {step === 4 && (
-                    <div className="checkout-step">
                         <h2>Order Review</h2>
                         {/* Order review and confirmation goes here */}
+                        <p>Order Total: ${totalAmount}</p>
+                        <p>Shipping Address: 1234 Elm St.</p>
+                        <p>Payment Method: Visa ending in 1234</p>
+                        <p>Expected Delivery: 3-5 business days</p>
+                        <p>Thank you for your order!</p>
+
                         <button onClick={handlePreviousStep}>Back</button>
-                        <button>Place Order</button>
                     </div>
                 )}
             </div>
@@ -88,6 +74,7 @@ const Checkout = ({ cartItems, updateQuantity, removeFromCart, user, onSignIn, o
                 ))}
                 <span>Total: ${totalAmount}</span>
             </div>
+
         </div>
     );
 };

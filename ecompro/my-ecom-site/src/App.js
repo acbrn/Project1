@@ -4,7 +4,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Header, Footer, Navbar } from './components/index';
 import { Home, Contact, Checkout } from './views/index';
 import ProductPage from './views/productpage/Product';
-import { product } from './data/products';
+// Importing the Payment component
+import { products } from './data/products';
 
 import './App.css';
 
@@ -33,9 +34,9 @@ const App = () => {
                 <Navbar />
                 <main>
                     <Routes>
-                        <Route path="/" element={<Home products={product} addToCart={addToCart} />} />
+                        <Route path="/" element={<Home products={products} addToCart={addToCart} />} />
                         <Route path="/contact" element={<Contact />} />
-                        <Route path="/products" element={<ProductPage addToCart={addToCart} />} />
+                        <Route path="/product" element={<ProductPage addToCart={addToCart} />} />
                         <Route path="/checkout" element={<Checkout cartItems={cartItems} 
                         updateQuantity={updateQuantity} removeFromCart={removeFromCart} />} />
                     </Routes>

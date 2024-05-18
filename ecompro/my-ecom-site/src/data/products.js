@@ -3,7 +3,7 @@ import bambooToothbrush from '../assets/bambootooth.jpg';
 import reusableBag from '../assets/reusable bag.jpg';
 import organicTshirt from '../assets/organictshirt.webp';
 
-export const product = [
+export const products = [
     {
         id: 1,
         name: 'Eco-friendly Bamboo Toothbrush',
