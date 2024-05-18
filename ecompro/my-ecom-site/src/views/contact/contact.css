@@ -1,0 +1,34 @@
+/* Container for the contact page */
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: var(--secondary-beige);
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Header styling */
+.contact-header {
+  color: var(--primary-brown);
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* Content styling */
+.contact-content p {
+  color: var(--neutral-charcoal);
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+/* Links within the content */
+.contact-content a {
+  color: var(--primary-green);
+  text-decoration: none;
+}
+
+.contact-content a:hover {
+  color: var(--accent-yellow);
+  text-decoration: underline;
+}

@@ -27,7 +27,7 @@ const Navbar = () => {
                         <Link to="/product" onClick={closeMenu}>Product</Link>
                         <Link to="/contact" onClick={closeMenu}>Contact</Link>
                         <Link to="/checkout" onClick={closeMenu}>Checkout</Link>
-                        <Link to="/cart" onClick={closeMenu}>
+                        <Link to="/checkout" onClick={closeMenu}>
                             <ShoppingCart size={24} weight="bold" />
                         </Link>
                     </nav>

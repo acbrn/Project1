@@ -1,16 +1,17 @@
+// src/components/productitem/ProductItem.jsx
 import React from 'react';
+import './productitem.css';
 
 const ProductItem = ({ product, addToCart }) => {
     return (
         <div className="product-item">
-            <img src={product.image} alt={product.name} />
-            <h3>{product.name}</h3>
+            <h2>{product.title}</h2>
+            <img src={product.image} alt={product.title} />
             <p>{product.description}</p>
-            <span>${product.price}</span>
-            <br />
+            <span>Price: ${product.price}</span>
             <button onClick={() => addToCart(product)}>Add to Cart</button>
         </div>
     );
-}
+};
 
 export default ProductItem;

@@ -1,0 +1,195 @@
+/* Container for the entire checkout process */
+.checkout-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: var(--secondary-beige);
+  border-radius: 10px;
+  display: flex;
+  gap: 20px;
+}
+
+/* Main content area */
+.checkout-main {
+  flex: 2;
+}
+
+/* Sidebar area */
+.checkout-sidebar {
+  flex: 1;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid var(--neutral-light-gray);
+}
+
+/* Each step in the checkout process */
+.checkout-step {
+  margin-bottom: 20px;
+}
+
+/* Title for each step */
+.checkout-step h2 {
+  color: var(--primary-brown);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Style for cart overview section */
+.cart-overview {
+  margin-bottom: 20px;
+}
+
+/* Individual cart item */
+.cart-item {
+  display: flex;
+  background-color: white;
+  border: 1px solid var(--neutral-light-gray);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.cart-item img {
+  max-width: 100px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.cart-item-details {
+  flex: 1;
+}
+
+.cart-item h3 {
+  color: var(--primary-brown);
+  margin: 0;
+}
+
+.cart-item p {
+  color: var(--neutral-charcoal);
+  margin: 5px 0;
+}
+
+.cart-item span {
+  color: var(--accent-green);
+  font-weight: bold;
+}
+
+.cart-item div {
+  display: flex;
+  align-items: center;
+}
+
+.cart-item label {
+  margin-right: 10px;
+}
+
+.cart-item input {
+  width: 50px;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid var(--neutral-light-gray);
+  border-radius: 5px;
+}
+
+.cart-item button {
+  background-color: var(--primary-green);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.cart-item button:hover {
+  background-color: var(--accent-yellow);
+  color: var(--neutral-charcoal);
+}
+
+/* Auth form styling */
+.auth-form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid var(--neutral-light-gray);
+}
+
+.auth-form h2 {
+  color: var(--primary-brown);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.auth-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-form label {
+  margin-bottom: 5px;
+  color: var(--neutral-charcoal);
+}
+
+.auth-form input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid var(--neutral-light-gray);
+  border-radius: 5px;
+}
+
+.auth-form button {
+  background-color: var(--primary-green);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.auth-form button:hover {
+  background-color: var(--accent-yellow);
+  color: var(--neutral-charcoal);
+}
+
+/* Navigation buttons for checkout steps */
+.checkout-step button {
+  background-color: var(--primary-green);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.checkout-step button:hover {
+  background-color: var(--accent-yellow);
+  color: var(--neutral-charcoal);
+}
+
+/* Sidebar section */
+.checkout-sidebar {
+  background-color: var(--secondary-beige);
+  border: 1px solid var(--neutral-light-gray);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.checkout-sidebar h3 {
+  color: var(--primary-brown);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.checkout-sidebar p {
+  color: var(--neutral-charcoal);
+  margin-bottom: 10px;
+}
+
+.checkout-sidebar span {
+  color: var(--primary-green);
+  font-weight: bold;
+}

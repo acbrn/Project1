@@ -16,7 +16,7 @@ const Header = ({ cartCount }) => {
             </div>
             <div className="cart-info">
                 <p>Cart: {cartCount} items
-                    <Link to="/cart">
+                    <Link to="/checkout">
                         <ShoppingCart size={24} />
                     </Link>
                 </p>
