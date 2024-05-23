@@ -1,7 +1,7 @@
 // src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Header, Footer, Navbar } from './components/index';
+import { Header, Footer, Navbar, CartItem } from './components/index';
 import { Home, Contact, Checkout } from './views/index';
 import ProductPage from './views/productpage/Product';
 // Importing the Payment component
@@ -36,6 +36,7 @@ const App = () => {
                     <Routes>
                         <Route path="/" element={<Home products={products} addToCart={addToCart} />} />
                         <Route path="/contact" element={<Contact />} />
+                        <Route path="/cart" element={<CartItem cartItems={cartItems} updateQuantity={updateQuantity} removeFromCart={removeFromCart} />} />
                         <Route path="/product" element={<ProductPage addToCart={addToCart} />} />
                         <Route path="/checkout" element={<Checkout cartItems={cartItems} 
                         updateQuantity={updateQuantity} removeFromCart={removeFromCart} />} />
