@@ -12,14 +12,12 @@ const Header = () => {
             </div>
             <div className='header-title-card'>
                 <img src={STS} alt='STS' className='header-title-img' />
-                </div>
-            <div className='header-content'>
-                <p>
-                Accounting, Consulting, & Taxes for Over 35+ Years
-                </p>
             </div>
             <div className='header-content'>
-                <p>A Resource for Family Farms & Small Business Owners</p>
+                <h1>A Resource for Family Farms & Small Business Owners</h1>
+            </div>
+            <div className='header-content'>
+                <p>Accounting, Consulting, & Taxes for Over 35+ Years</p>
             </div>
         </div>
     )
